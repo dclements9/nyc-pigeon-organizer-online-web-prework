@@ -5,8 +5,8 @@ def nyc_pigeon_organizer(data)
  data.each do |trait, trait_list|
     trait_list.each do |specified_trait,names|
         names.each do |pigeon_name|
-            pigeon_list[pigeon_name] = {}
-            pigeon_list[pigeon_name][trait] = []
+            pigeon_list[pigeon_name] ||= {}
+            pigeon_list[pigeon_name][trait] ||= []
             pigeon_list[pigeon_name][trait] << specified_trait
         end
     end
