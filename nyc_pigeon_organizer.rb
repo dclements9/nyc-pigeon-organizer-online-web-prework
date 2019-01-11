@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
         names.each do |pigeon_name|
             pigeon_list[pigeon_name] = {}
             pigeon_list[pigeon_name][trait] = []
-            pigeon_list[pigeon_name][trait] << trait_list
+            pigeon_list[pigeon_name][trait] << specified_trait
         end
     end
 end
