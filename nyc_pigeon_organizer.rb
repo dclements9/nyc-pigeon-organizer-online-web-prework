@@ -6,12 +6,11 @@ def nyc_pigeon_organizer(data)
     trait_list.each do |specified_trait,names|
         names.each do |pigeon_name|
             pigeon_list[pigeon_name] = {}
-            pigeon_list[bird_name][pigeon_attribute] = []
-            pigeon_list[bird_name][pigeon_attribute] << trait_list
+            pigeon_list[pigeon_name][trait] = []
+            pigeon_list[pigeon_name][trait] << trait_list
         end
     end
 end
 binding.pry
 pigeon_list
-
 end
